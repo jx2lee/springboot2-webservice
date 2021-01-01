@@ -19,12 +19,23 @@ public class IndexControllerTest {
     private TestRestTemplate restTemplate;
 
     @Test
-    public void 메인페이지_로딩() {
+    public void MainPageLoad() {
         //when
         String body = this.restTemplate.getForObject("/", String.class);
 
         //then
-        assertThat(body).contains("Spring Boot 로 시작하는 WebService");
+        assertThat(body).contains("Spring Boot WebService Ver.2");
     }
+
+    @Test
+    public void SavePageLoad() {
+        //when
+        String body = this.restTemplate.getForObject("/posts/save", String.class);
+
+
+        //then
+        assertThat(body).contains("Register Post");
+    }
+
 }
 
