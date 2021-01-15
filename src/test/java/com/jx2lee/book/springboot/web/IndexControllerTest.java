@@ -26,16 +26,5 @@ public class IndexControllerTest {
         //then
         assertThat(body).contains("Spring Boot WebService Ver.2");
     }
-
-    @Test
-    public void SavePageLoad() {
-        //when
-        String body = this.restTemplate.getForObject("/posts/save", String.class);
-
-
-        //then
-        assertThat(body).contains("Register Post");
-    }
-
 }
 
