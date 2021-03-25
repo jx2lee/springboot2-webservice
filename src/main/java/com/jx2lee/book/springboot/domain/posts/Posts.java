@@ -1,15 +1,11 @@
 package com.jx2lee.book.springboot.domain.posts;
 
 import com.jx2lee.book.springboot.domain.BaseTimeEntity;
-import lombok.Builder;
 import lombok.Getter;
+import lombok.Builder;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Getter
 @NoArgsConstructor
