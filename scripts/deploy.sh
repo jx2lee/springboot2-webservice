@@ -19,6 +19,7 @@ fi
 
 echo "> 새 어플리케이션 배포"
 
+$REPOSITORY/gradlew build
 JAR_NAME=$(ls -tr $REPOSITORY/build/libs/*.jar | tail -n 1)
 
 echo "> JAR Name: $JAR_NAME"
